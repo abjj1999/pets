@@ -1,6 +1,6 @@
 
 .container {
-    margin-top: 7%;
+    margin-top: 4%;
     display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Distribute space between columns */
     align-items: center;
@@ -8,13 +8,13 @@
 
 #left-column {
     flex: 1; /* Take up available space on the left */
-    padding: 20px; /* Add padding for spacing */
+    padding: 1em; /* Add padding for spacing */
     text-align: center; /* Center content horizontally */
 }
 
 input, button {
     flex: 1; /* Distribute available space equally between the elements */
-    margin: 10px; /* Add margin for spacing */
+    margin: 0.5em; /* Add margin for spacing */
 }
 
 .right-column {
