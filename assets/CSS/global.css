@@ -5,10 +5,12 @@
 }
 .primary_font {
     font-family: 'Bitter', serif;
+	color: #f2bc94;
 }
 
 .secondary_font {
     font-family: 'Roboto Mono', monospace;
+    color: #f2bc94;
 }
 /* 
     colors:
@@ -19,21 +21,22 @@
 */
 
 .background_color{
-    background-color: #f4af1b !important;
+    background-color: #00154F !important;
 }
 
 .list_styling{
     background-color: #e9f1f7;
     padding: 2px 10px;
     border-radius: 5px;
-}
+}.
 .list_styling li a:hover{
     text-decoration: underline !important;
     
 }
 
-.buttons_container button{
-    background-color: #e9f1f7;
+.buttons_container button {
+    background-color: #f4af1b;
+    color: #00154f;
 }
 
 .buttons_container button:hover{

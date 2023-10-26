@@ -19,25 +19,28 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://kit.fontawesome.com/81f4fdfae6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/global.css"/>
+	<link rel="stylesheet" href="./assets/css/login-register.css"/>
   <title>Login</title>
 </head>
-<body>
+<body class="background_color">
 	<!--1-2 paragraphs? (mid-left)
 	2 text fields (mid left)
 	1 button (mid left)
 	image (mid-right)-->
-	<div id="importIndex"> <!-- Will be on the left side -->
-		<p>Welcome back!</p>
-		<p>Login to view your recommendations.</p>
-		<form action="login.php" method="post">
-			<input type="email" id="email" name="email" placeholder="Email" required><br>
-			<input type="password" id="password" name="password" placeholder="Password" required><br>
-			<button type="submit">Login</button>
-		</form><br>
-	</div>
-	<div> <!-- Will be on the right side -->
-		<img src="assets\imgs\dogs_login_page.png" alt="Picture of Dogs" width="500" height="400">
+	<div class="container">  <!-- Will be on the left side -->
+		<div id="left-column" class="buttons_container">
+			<p class="primary_font">Welcome back!</p>
+			<p class="primary_font">Login to view your recommendations.</p>
+			<form action="login.php" method="post">
+				<input type="email" id="email" name="email" placeholder="Email" required><br>
+				<input type="password" id="password" name="password" placeholder="Password" required><br>
+				<button class="buttons_container" type="submit">Login</button>
+			</form>
+		</div>
+		<div class="right-column">
+			<img src="assets\imgs\dogs_login_page.png" alt="Picture of Dogs">
+		</div>
 	</div>
 </body>
 </html>
