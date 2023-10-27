@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="./assets/css/login-register.css"/>
   <title>Login</title>
 </head>
-<body class="background_color">
+<body>
 
 	<!-- NavBar -->
 	<nav class="navbar navbar-expand-lg bg-body-tertiary background_color">
@@ -70,13 +70,13 @@
 	image (mid-right)-->
 	<div class="container">
 		<!-- Will be on the left side -->
-		<div id="left-column" class="buttons_container">
-			<p class="primary_font">Welcome back!</p>
-			<p class="primary_font">Login to view your recommendations.</p>
+		<div class="left-column buttons_container_login">
+			<p class="primary_font_login">Welcome back!</p>
+			<p class="primary_font_login">Login to view your recommendations.</p>
 			<form action="login.php" method="post">
 				<input type="email" id="email" name="email" placeholder="Email" required><br>
 				<input type="password" id="password" name="password" placeholder="Password" required><br>
-				<button class="btn" type="submit">Login</button>
+				<button class="btn"  type="submit">Login</button>
 			</form>
 		</div>
 		<div class="right-column">

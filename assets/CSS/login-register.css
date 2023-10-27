@@ -3,9 +3,10 @@
     margin-top: 4%;
     display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Distribute space between columns */
+    color: #f2bc94;
 }
 
-#left-column {
+.left-column {
     flex: 1; /* Take up available space on the left */
     padding: 1em; /* Add padding for spacing */
     text-align: center; /* Center content horizontally */
@@ -19,4 +20,22 @@ input, button {
 .right-column {
     flex: 1; /* Take up available space on the right */
     text-align: center; /* Center content horizontally */
+}
+
+body {
+    background-color: #00154f;
+}
+
+.buttons_container_login button {
+    background-color: #f4af1b;
+}
+
+.buttons_container_login button:hover {
+    background-color: #00154f;
+    color: #f4af1b;
+}
+
+.primary_font_login {
+    font-family: 'Bitter', serif;
+    color: #f4af1b;
 }
