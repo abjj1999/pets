@@ -14,7 +14,7 @@
       $msg = "";
       
       //Will check if email exists in the database
-      $sqlSelect = "SELECT id FROM admin WHERE email = '$myEmail'";
+      $sqlSelect = "SELECT id FROM client WHERE email = '$myEmail'";
       $result = mysqli_query($db,$sqlSelect);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       
@@ -22,7 +22,7 @@
       
       if($count == 0) {
          
-          $sqlInsert = "INSERT INTO admin (name, email, password) VALUES ('$myName', '$myEmail', '$hashedPassword')";
+          $sqlInsert = "INSERT INTO cient (name, email, password) VALUES ('$myName', '$myEmail', '$hashedPassword')";
     	
           if(mysqli_query($db,$sqlInsert)) {
              $msg = "User successfully added."

@@ -10,7 +10,7 @@
       
       $hashedPassword = password_hash($myPassword, PASSWORD_BCRYPT);
       
-      $sql = "SELECT id FROM admin WHERE email = '$myEmail' and password = '$hashedPassword'";
+      $sql = "SELECT id FROM client WHERE email = '$myEmail' and password = '$hashedPassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       $active = $row['active'];
