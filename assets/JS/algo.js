@@ -1,4 +1,4 @@
-let dogBreeds = [
+ let dogBreeds = [
   {
     breed: "Golden Retriever",
     size: "Large",
@@ -367,4 +367,8 @@ let dogBreeds = [
   
 ];
 
-console.log(dogBreeds);
+localStorage.setItem("dogBreeds", JSON.stringify(dogBreeds));
+
+
+
+// module.exports = dogBreeds;
