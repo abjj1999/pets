@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="./assets/css/global.css" />
 	<link rel="stylesheet" href="./assets/css/login-register.css" />
 	<title>Login</title>
+	
 </head>
 <body>
 	
@@ -39,7 +40,7 @@
 			<div class="collapse navbar-collapse " id="navbarNav">
 				<ul class="navbar-nav list_styling me-auto">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" onclick="homeRedirect()">Home</a>
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Breeds</a>
@@ -70,11 +71,14 @@
 		<div class="left-column buttons_container_login">
 			<p class="primary_font_login">Welcome back!</p>
 			<p class="primary_font_login">Login to view your recommendations.</p>
-			<form action="login.php" method="post">
+			<form id="loginForm" method="POST">
 				<input type="email" id="email" name="email" placeholder="Email" required><br>
 				<input type="password" id="password" name="password" placeholder="Password" required><br>
 				<button class="btn"  type="submit">Login</button>
 			</form>
+			<!-- <div id="response"></div> -->
+			<div id="response"></div>
+			<script src="\pets\assets\JS\login.js"></script>
 		</div>
 		<div class="right-column">
 			<img src="assets\imgs\dogs_login_page.png" alt="Picture of Dogs">

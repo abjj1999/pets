@@ -1,5 +1,6 @@
-<!-- home page -->
-<!DOCTYPE html>
+<?php
+    include('session.php');
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -15,8 +16,8 @@
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/81f4fdfae6.js" crossorigin="anonymous"></script>
-    <script src="./assets/JS/index.js"></script>
-    <link rel="stylesheet" href="./assets/css/global.css" />
+    <script src="http://localhost/pets/assets/JS/index.js"></script>
+    <link rel="stylesheet" href="http://localhost/pets/assets/css/global.css" />
     <title>Pet</title>
     
 </head>
@@ -52,8 +53,7 @@
                   </ul>
 
                   <div class="buttons_container">
-                      <button class="btn" id="loginBtn"><a class="nav-link" onclick="loginRedirect()">Login</a></button>
-                      <button class="btn" id="signupBtn"><a class="nav-link" onclick="signUpRedirect()">Sign Up</a></button>
+                      <button class="btn" id="loginBtn"><a class="nav-link" href="http://localhost/pets/assets/PHP/logout.php">Logout</a></button>
                   </div>
               </div>
           </div>

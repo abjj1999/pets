@@ -1,16 +1,13 @@
 // JavaScript source code
 
 function loginRedirect() {
-    window.location.replace("http://localhost:8080/login.html");
+    window.location.replace("http://localhost/pets/login.html");
 }
-setTimeout("loginRedirect()", 10000);
 
 function signUpRedirect() {
-    window.location.replace("http://localhost:8080/signup.html");
+    window.location.replace("http://localhost/pets/signup.html");
 }
-setTimeout("signUpRedirect()", 10000);
 
-function homeRedirect() {
-    window.location.replace("http://localhost:8080/index.html");
+function logoutRedirect() {
+    window.location.replace("http://localhost/pets/assets/PHP/logout.php");
 }
-setTimeout("homeRedirect()", 10000);
