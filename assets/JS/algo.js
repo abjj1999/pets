@@ -2,9 +2,9 @@
   {
     breed: "Golden Retriever",
     size: "Large",
-    weight: "70-75 lbs",
+    weight: "70 lbs",
     shedding: "High",
-    life_expectancy: "10-12 years",
+    life_expectancy: "10",
     barking: "Moderate",
     energy: "High",
     trainability: "High",
@@ -14,31 +14,33 @@
   {
     breed: "French Bulldog",
     size: "Small",
-    weight: "16-28 lbs",
+    weight: "24 lbs",
     shedding: "Low",
-    life_expectancy: "10-12 years",
+    life_expectancy: "10",
     barking: "Low",
     energy: "Low",
     trainability: "Moderate",
     protectiveness: "Moderate",
+    alargy: "Low",
   },
   {
     breed: "German Shepherd",
     size: "Large",
-    weight: "50-90 lbs",
+    weight: "80 lbs",
     shedding: "High",
-    life_expectancy: "9-13 years",
+    life_expectancy: "9",
     barking: "High",
     energy: "High",
     trainability: "High",
     protectiveness: "High",
+
   },
   {
     breed: "Beagle",
     size: "Medium",
-    weight: "20-25 lbs",
+    weight: "20 lbs",
     shedding: "Moderate",
-    life_expectancy: "10-15 years",
+    life_expectancy: "10",
     barking: "High",
     energy: "High",
     trainability: "Moderate",
@@ -49,7 +51,7 @@
     size: "Varies",
     weight: "Varies",
     shedding: "Low",
-    life_expectancy: "10-18 years",
+    life_expectancy: "10",
     barking: "Low",
     energy: "High",
     trainability: "High",
@@ -58,9 +60,9 @@
   {
     breed: "Siberian Husky",
     size: "Large",
-    weight: "35-60 lbs",
+    weight: "50 lbs",
     shedding: "High",
-    life_expectancy: "12-15 years",
+    life_expectancy: "12",
     barking: "Moderate",
     energy: "High",
     trainability: "Moderate",
@@ -69,9 +71,9 @@
   {
     breed: "Chihuahua",
     size: "Small",
-    weight: "2-6 lbs",
+    weight: "5 lbs",
     shedding: "Low",
-    life_expectancy: "14-16 years",
+    life_expectancy: "14",
     barking: "High",
     energy: "Medium",
     trainability: "Medium",
@@ -80,9 +82,9 @@
   {
     breed: "Labrador Retriever",
     size: "Large",
-    weight: "55-80 lbs",
+    weight: "70 lbs",
     shedding: "High",
-    life_expectancy: "10-12 years",
+    life_expectancy: "10",
     barking: "Low",
     energy: "High",
     trainability: "High",
@@ -91,9 +93,9 @@
   {
     breed: "Dachshund",
     size: "Small",
-    weight: "16-32 lbs",
+    weight: "24 lbs",
     shedding: "Medium",
-    life_expectancy: "12-16 years",
+    life_expectancy: "12",
     barking: "High",
     energy: "Medium",
     trainability: "Medium",
@@ -102,9 +104,9 @@
   {
     breed: "Rottweiler",
     size: "Large",
-    weight: "80-135 lbs",
+    weight: "110 lbs",
     shedding: "Medium",
-    life_expectancy: "8-10 years",
+    life_expectancy: "8",
     barking: "Low",
     energy: "Medium",
     trainability: "High",
@@ -113,9 +115,9 @@
   {
     breed: "Boxer",
     size: "Large",
-    weight: "55-71 lbs",
+    weight: "65 lbs",
     shedding: "Low",
-    life_expectancy: "10-12 years",
+    life_expectancy: "10",
     barking: "Low",
     energy: "High",
     trainability: "High",
@@ -124,9 +126,9 @@
   {
     breed: "Bulldog",
     size: "Medium",
-    weight: "40-50 lbs",
+    weight: "45 lbs",
     shedding: "Low",
-    life_expectancy: "8-10 years",
+    life_expectancy: "8",
     barking: "Low",
     energy: "Low",
     trainability: "Medium",
@@ -135,9 +137,9 @@
   {
     breed: "Yorkshire Terrier",
     size: "Small",
-    weight: "4-7 lbs",
+    weight: "5 lbs",
     shedding: "Low",
-    life_expectancy: "13-16 years",
+    life_expectancy: "13",
     barking: "High",
     energy: "Medium",
     trainability: "High",
@@ -146,9 +148,9 @@
   {
     breed: "Pomeranian",
     size: "Small",
-    weight: "3-7 lbs",
+    weight: "5 lbs",
     shedding: "High",
-    life_expectancy: "12-16 years",
+    life_expectancy: "12",
     barking: "High",
     energy: "Medium",
     trainability: "Medium",
@@ -157,9 +159,9 @@
   {
     breed: "Shih Tzu",
     size: "Small",
-    weight: "9-16 lbs",
+    weight: "13 lbs",
     shedding: "Low",
-    life_expectancy: "10-16 years",
+    life_expectancy: "10",
     barking: "Low",
     energy: "Low",
     trainability: "Medium",
@@ -168,9 +170,9 @@
   {
     breed: "Great Dane",
     size: "Giant",
-    weight: "110-175 lbs",
+    weight: "145 lbs",
     shedding: "Medium",
-    life_expectancy: "7-10 years",
+    life_expectancy: "7",
     barking: "Low",
     energy: "Medium",
     trainability: "Medium",
@@ -179,9 +181,9 @@
   {
     breed: "Bichon Frise",
     size: "Small",
-    weight: "10-20 lbs",
+    weight: "15 lbs",
     shedding: "Low",
-    life_expectancy: "14-15 years",
+    life_expectancy: "14",
     barking: "Medium",
     energy: "High",
     trainability: "High",
@@ -190,9 +192,9 @@
   {
     breed: "Cocker Spaniel",
     size: "Medium",
-    weight: "20-30 lbs",
+    weight: "25 lbs",
     shedding: "Medium",
-    life_expectancy: "10-14 years",
+    life_expectancy: "10",
     barking: "Medium",
     energy: "High",
     trainability: "High",
@@ -201,9 +203,9 @@
   {
     breed: "Doberman Pinscher",
     size: "Large",
-    weight: "60-100 lbs",
+    weight: "80 lbs",
     shedding: "Low",
-    life_expectancy: "10-12 years",
+    life_expectancy: "10",
     barking: "High",
     energy: "High",
     trainability: "High",
@@ -212,9 +214,9 @@
   {
     breed: "Cavalier King Charles Spaniel",
     size: "Small",
-    weight: "13-18 lbs",
+    weight: "15 lbs",
     shedding: "Medium",
-    life_expectancy: "9-15 years",
+    life_expectancy: "9",
     barking: "Low",
     energy: "Medium",
     trainability: "High",
@@ -223,9 +225,9 @@
   {
     breed: "Border Collie",
     size: "Medium",
-    weight: "30-45 lbs",
+    weight: "35 lbs",
     shedding: "High",
-    life_expectancy: "10-17 years",
+    life_expectancy: "10",
     barking: "Medium",
     energy: "Very High",
     trainability: "Very High",
@@ -234,9 +236,9 @@
   {
     breed: "Saint Bernard",
     size: "Giant",
-    weight: "120-180 lbs",
+    weight: "150 lbs",
     shedding: "High",
-    life_expectancy: "8-10 years",
+    life_expectancy: "8",
     barking: "Low",
     energy: "Low",
     trainability: "Medium",
@@ -245,9 +247,9 @@
   {
     breed: "Pug",
     size: "Small",
-    weight: "14-18 lbs",
+    weight: "16 lbs",
     shedding: "Medium",
-    life_expectancy: "12-15 years",
+    life_expectancy: "12",
     barking: "Low",
     energy: "Low",
     trainability: "Medium",
@@ -256,9 +258,9 @@
   {
     breed: "Dalmatian",
     size: "Large",
-    weight: "45-70 lbs",
+    weight: "60 lbs",
     shedding: "High",
-    life_expectancy: "10-13 years",
+    life_expectancy: "10",
     barking: "High",
     energy: "High",
     trainability: "Medium",
@@ -267,9 +269,9 @@
   {
     breed: "Australian Shepherd",
     size: "Medium",
-    weight: "40-65 lbs",
+    weight: "55 lbs",
     shedding: "High",
-    life_expectancy: "13-15 years",
+    life_expectancy: "13",
     barking: "Medium",
     energy: "High",
     trainability: "High",
@@ -278,9 +280,9 @@
   {
     breed: "Staffordshire Bull Terrier",
     size: "Medium",
-    weight: "24-37 lbs",
+    weight: "30 lbs",
     shedding: "Low",
-    life_expectancy: "12-14 years",
+    life_expectancy: "12",
     barking: "Low",
     energy: "High",
     trainability: "High",
@@ -289,9 +291,9 @@
   {
     breed: "Shetland Sheepdog",
     size: "Small",
-    weight: "14-27 lbs",
+    weight: "20 lbs",
     shedding: "High",
-    life_expectancy: "12-14 years",
+    life_expectancy: "12",
     barking: "High",
     energy: "High",
     trainability: "High",
@@ -300,9 +302,9 @@
   {
     breed: "Mastiff",
     size: "Giant",
-    weight: "120-230 lbs",
+    weight: "175 lbs",
     shedding: "Medium",
-    life_expectancy: "6-10 years",
+    life_expectancy: "6",
     barking: "Low",
     energy: "Low",
     trainability: "Medium",
@@ -311,9 +313,9 @@
   {
     breed: "Brittany",
     size: "Medium",
-    weight: "30-40 lbs",
+    weight: "35 lbs",
     shedding: "Medium",
-    life_expectancy: "10-13 years",
+    life_expectancy: "10",
     barking: "Medium",
     energy: "High",
     trainability: "High",
@@ -322,9 +324,9 @@
   {
     breed: "English Springer Spaniel",
     size: "Medium",
-    weight: "40-50 lbs",
+    weight: "45 lbs",
     shedding: "Medium",
-    life_expectancy: "12-14 years",
+    life_expectancy: "12",
     barking: "Medium",
     energy: "High",
     trainability: "High",
@@ -334,9 +336,9 @@
   {
     breed: "German Shorthaired Pointer",
     size: "Large",
-    weight: "45-70 lbs",
+    weight: "60 lbs",
     shedding: "Low",
-    life_expectancy: "12-14 years",
+    life_expectancy: "12",
     barking: "Medium",
     energy: "Very High",
     trainability: "High",
@@ -345,9 +347,9 @@
   {
     breed: "Weimaraner",
     size: "Large",
-    weight: "55-85 lbs",
+    weight: "70 lbs",
     shedding: "Low",
-    life_expectancy: "10-13 years",
+    life_expectancy: "10",
     barking: "Medium",
     energy: "Very High",
     trainability: "High",
@@ -356,9 +358,9 @@
   {
     breed: "Akita",
     size: "Large",
-    weight: "70-130 lbs",
+    weight: "100 lbs",
     shedding: "High",
-    life_expectancy: "10-15 years",
+    life_expectancy: "10",
     barking: "Low",
     energy: "Medium",
     trainability: "Medium",
@@ -371,4 +373,141 @@ localStorage.setItem("dogBreeds", JSON.stringify(dogBreeds));
 
 
 
-// module.exports = dogBreeds;
+// algo for matching the user's input to the top 3 dog breeds
+
+const convertToScore = () => {
+  let map = {
+    'size': {
+      'Small': 1,
+      'Medium': 2,
+      'Large': 3,
+      'Giant': 5
+    }, // q2 
+      'weight': {
+      '5 lbs': 1,
+      '13 lbs': 1,
+      '15 lbs': 1,
+      '16 lbs': 1,
+      '20 lbs': 1,
+      '24 lbs': 2,
+      '25 lbs': 2,
+      '30 lbs': 2,
+      '35 lbs': 2,
+      '45 lbs': 2,
+      '50 lbs': 3,
+      '55 lbs': 3,
+      '60 lbs': 3,
+      '65 lbs': 3,
+      '70 lbs': 4,
+      '80 lbs': 4,
+      '100 lbs': 4,
+      '110 lbs': 4,
+      '145 lbs': 5,
+      '150 lbs': 5,
+      '175 lbs': 5
+    }, // q3
+    'shedding': {
+      'Low': 1,
+      'Moderate': 2,
+      'Medium': 3,
+      'High': 5
+    },  // q4
+    'life_expectancy': {
+      '6': 1,
+      '7': 1,
+      '8': 2,
+      '9': 2,
+      '10': 3,
+      '11': 3,
+      '12': 4,
+      '13': 4,
+      '14': 5
+    }, // q5
+    'barking': {
+      'Low': 1,
+      "Moderate": 2,
+      'Medium': 3,
+      'High': 5
+    }, // q6
+    'energy': {
+      'Low': 1,
+      'Moderate': 2,
+      'Medium': 3,
+      'High': 5
+    }, //  q7
+    'trainability': {
+      'Low': 1,
+      'Moderate': 2,
+      'Medium': 3,
+      'High': 5
+    }, // q8
+    'protectiveness': {
+      'Low': 1,
+      'Moderate': 2,
+      'Medium': 3,
+      'High': 5
+    }, // q9
+    'alargy': {
+      'Low': 1,
+      'Moderate': 2,
+      'Medium': 3,
+      'High': 5
+    } // q1,
+  }
+
+  // use a for loop to iterate over the dog breeds array to changs the words to numbers
+
+   for (let i = 0; i < dogBreeds.length; i++) {
+    let breed = dogBreeds[i];
+    breed.size = map.size[breed.size];
+    breed.weight = map.weight[breed.weight];
+    breed.shedding = map.shedding[breed.shedding];
+    breed.life_expectancy = map.life_expectancy[breed.life_expectancy];
+    breed.barking = map.barking[breed.barking];
+    breed.energy = map.energy[breed.energy];
+    breed.trainability = map.trainability[breed.trainability];
+    breed.protectiveness = map.protectiveness[breed.protectiveness];
+    // breed.alargy = map.alargy[breed.alargy];
+   }
+}
+
+
+// array of user answers 
+const userRes = [
+  1, // alargy
+  3, // size
+  4, // weight
+  5, // shedding 
+  3, // life expectancy
+  2, // barking
+  5, // energy
+  5, // trainability
+  1, // protectiveness
+
+]
+
+convertToScore();
+
+
+// function to replace the words with numbers
+console.log( dogBreeds[0])
+console.log( dogBreeds[1])
+
+// function to get the best 3 matches based on the user's answers
+
+const getBestMatches = () => {
+  let bestMatches = [];
+
+  for (let i = 0; i < dogBreeds.length; i++) {
+    if( dogBreeds[i].size === userRes[1] && dogBreeds[i].weight === userRes[2] && dogBreeds[i].shedding === userRes[3] && dogBreeds[i].life_expectancy === userRes[4] && dogBreeds[i].barking === userRes[5] && dogBreeds[i].energy === userRes[6] && dogBreeds[i].trainability === userRes[7] && dogBreeds[i].protectiveness === userRes[8]) {
+      bestMatches.push(dogBreeds[i]);
+    }
+
+    // bestMatches.push(dogBreeds[i]);
+    
+  }
+
+  console.log("Best matches\n",bestMatches);
+}
+
+getBestMatches();
