@@ -62,9 +62,14 @@ var questions = [
 function displayQuestion(i) {
   answerBox.innerHTML = "";
   questionText.textContent = questions[i].Text;
+  answerBox.setAttribute("class", "p-3 d-flex flex-wrap justify-content-center align-items-center");
   questions[i].Choices.forEach(function (choice) {
     var btn = document.createElement("button");
-    btn.textContent = choice;
+    var h2 = document.createElement("h2");
+    h2.textContent = choice;
+    h2.setAttribute("class", "text-center");
+    btn.appendChild(h2);
+    btn.setAttribute("class", "col-lg-4 col-md-5 col-sm-4 m-2 rounded-pill d-flex justify-content-center align-items-center");
     answerBox.appendChild(btn);
     btn.addEventListener("click", function () {
       verifyAnswer(btn.textContent);
