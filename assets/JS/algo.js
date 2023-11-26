@@ -484,30 +484,90 @@ const userRes = [
   5, // trainability
   1, // protectiveness
 
-]
+];
 
+
+// total score of user answers is 29
+const totalScore = userRes.reduce((a, b) => a + b, 0);
+console.log(totalScore)
 convertToScore();
 
 
-// function to replace the words with numbers
-console.log( dogBreeds[0])
-console.log( dogBreeds[1])
+// // function to replace the words with numbers
+// console.log( dogBreeds[0])
+// console.log( dogBreeds[1])
 
+// get the total of all the scores for each dog breed
+function getScore(dog) {
+  return dog.size + dog.weight + dog.shedding + dog.life_expectancy + dog.barking + dog.energy + dog.trainability + dog.protectiveness;
+}
 // function to get the best 3 matches based on the user's answers
 
 const getBestMatches = () => {
   let bestMatches = [];
 
   for (let i = 0; i < dogBreeds.length; i++) {
-    if( dogBreeds[i].size === userRes[1] && dogBreeds[i].weight === userRes[2] && dogBreeds[i].shedding === userRes[3] && dogBreeds[i].life_expectancy === userRes[4] && dogBreeds[i].barking === userRes[5] && dogBreeds[i].energy === userRes[6] && dogBreeds[i].trainability === userRes[7] && dogBreeds[i].protectiveness === userRes[8]) {
+    
+    // push the dog breed that's closest to the user's answers
+
+    const lowest = totalScore - 5;
+    const highest = totalScore + 6;
+
+    if (getScore(dogBreeds[i]) >= lowest && getScore(dogBreeds[i]) <= highest) {
       bestMatches.push(dogBreeds[i]);
     }
-
-    // bestMatches.push(dogBreeds[i]);
     
+  }
+  // now since the array is smaller, we can still get the best 3 matches or more based on the user's answers
+  const weightMatch  =[]
+  const sheddingMatch = []
+  const barkingMatch = []
+  const lifeExpectancyMatch = []
+  for (let i = 0; i < bestMatches.length; i++) {
+    // based on weight
+    
+    if(bestMatches[i].weight <= userRes[2]){
+      weightMatch.push(bestMatches[i])
+    }
+
+    
+
+
+
+    
+
+  }
+
+  for (let i = 0; i < weightMatch.length; i++) {
+    // based on shedding
+    if(weightMatch[i].shedding <= userRes[3]){
+      sheddingMatch.push(weightMatch[i])
+    }
+
+  }
+
+  for (let i = 0; i < sheddingMatch.length; i++) {
+    // based on barking
+    if(sheddingMatch[i].barking <= userRes[5]){
+      barkingMatch.push(sheddingMatch[i])
+    }
+
+  }
+
+  for (let i = 0; i < barkingMatch.length; i++) {
+    // based on life expectancy
+    if(barkingMatch[i].life_expectancy <= userRes[4]){
+      lifeExpectancyMatch.push(barkingMatch[i])
+    }
+
   }
 
   console.log("Best matches\n",bestMatches);
+  console.log(weightMatch)
+  console.log(sheddingMatch)
+  console.log(barkingMatch)
+  console.log(lifeExpectancyMatch)
+
 }
 
 getBestMatches();

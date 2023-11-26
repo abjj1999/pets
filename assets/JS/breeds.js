@@ -15,7 +15,7 @@
 // getFromLocalStorage()
 
 function stars (rating) {
-    if (rating === "Low") {
+    if (rating === 1 ) {
         return `
         <i id="icon" class="fa-solid fa-star"></i>
         <i id="icon" class="fa-solid fa-star"></i>
@@ -24,7 +24,17 @@ function stars (rating) {
         <i id="icon" class="fa-regular fa-star"></i>
         `
     }
-    else if (rating === "Moderate" || rating === "Medium") {
+    else if ( rating === 2) {
+        return `
+        <i id="icon" class="fa-solid fa-star"></i>
+        <i id="icon" class="fa-solid fa-star"></i>
+        <i id="icon" class="fa-regular fa-star"></i>
+        <i id="icon" class="fa-regular fa-star"></i>
+        <i id="icon" class="fa-regular fa-star"></i>
+        `
+
+    }
+    else if (rating === 3) {
         return `
         <i id="icon" class="fa-solid fa-star"></i>
         <i id="icon" class="fa-solid fa-star"></i>
@@ -33,7 +43,7 @@ function stars (rating) {
         <i id="icon" class="fa-regular fa-star"></i>
         `
     }
-    else if (rating === "High") {
+    else if (rating === 5) {
         return `
         <i id="icon" class="fa-solid fa-star"></i>
         <i id="icon" class="fa-solid fa-star"></i>
@@ -45,6 +55,48 @@ function stars (rating) {
     else {
         return rating;
     }
+
+
+}
+
+function convertSize(rating){
+    if (rating === 1 ) {
+        return "Small"
+}
+    else if ( rating === 2) {
+        return "Medium"
+    }
+    else if (rating === 3) {
+        return "Large"
+    }
+    else if (rating === 5) {
+        return "Giant"
+    }
+    else {
+        return rating;
+    }
+}
+
+function convertWeight(rating){
+    if (rating === 1 ) {
+        return "0-20 lbs"
+}
+    else if ( rating === 2) {
+        return "21-50 lbs"
+    }
+    else if (rating === 3) {
+        return "51-70 lbs"
+    }
+    else if (rating === 4) {
+        return "71-110 lbs"
+    }
+    else if (rating === 5) {
+        return "110+ lbs"
+    }
+    else {
+        return rating;
+    }
+
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -65,8 +117,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     <img src="./assets/imgs/doggo.jpg" class="card-img-top img_class" alt="...">
                 </div>
                 <div class="card-body secondary_font fw-semibold gap-2">
-                    <p class="card-text">Size: ${dogBreeds[i].size}</p>
-                    <p class="card-text">Weight: ${dogBreeds[i].weight}</p>
+                    <p class="card-text">Size: ${convertSize(dogBreeds[i].size)}</p>
+                    <p class="card-text">Weight: ${convertWeight(dogBreeds[i].weight)}</p>
                     <p class="card-text ">Shedding: ${stars(dogBreeds[i].shedding)}</p>
                     <p class="card-text">Life Expectancy: ${dogBreeds[i].life_expectancy}</p>
                     <p class="card-text">Barking: ${stars(dogBreeds[i].barking)}</p>
