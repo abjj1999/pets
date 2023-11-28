@@ -1,4 +1,4 @@
- let dogBreeds = [
+let dogBreeds = [
   {
     breed: "Golden Retriever",
     size: "Large",
@@ -33,7 +33,6 @@
     energy: "High",
     trainability: "High",
     protectiveness: "High",
-
   },
   {
     breed: "Beagle",
@@ -332,7 +331,7 @@
     trainability: "High",
     protectiveness: "Medium",
   },
- 
+
   {
     breed: "German Shorthaired Pointer",
     size: "Large",
@@ -342,7 +341,7 @@
     barking: "Medium",
     energy: "Very High",
     trainability: "High",
-    protectiveness: "Medium"
+    protectiveness: "Medium",
   },
   {
     breed: "Weimaraner",
@@ -353,7 +352,7 @@
     barking: "Medium",
     energy: "Very High",
     trainability: "High",
-    protectiveness: "Medium"
+    protectiveness: "Medium",
   },
   {
     breed: "Akita",
@@ -364,100 +363,97 @@
     barking: "Low",
     energy: "Medium",
     trainability: "Medium",
-    protectiveness: "Very High"
+    protectiveness: "Very High",
   },
-  
 ];
 
 localStorage.setItem("dogBreeds", JSON.stringify(dogBreeds));
-
-
 
 // algo for matching the user's input to the top 3 dog breeds
 
 const convertToScore = () => {
   let map = {
-    'size': {
-      'Small': 1,
-      'Medium': 2,
-      'Large': 3,
-      'Giant': 5
-    }, // q2 
-      'weight': {
-      '5 lbs': 1,
-      '13 lbs': 1,
-      '15 lbs': 1,
-      '16 lbs': 1,
-      '20 lbs': 1,
-      '24 lbs': 2,
-      '25 lbs': 2,
-      '30 lbs': 2,
-      '35 lbs': 2,
-      '45 lbs': 2,
-      '50 lbs': 3,
-      '55 lbs': 3,
-      '60 lbs': 3,
-      '65 lbs': 3,
-      '70 lbs': 4,
-      '80 lbs': 4,
-      '100 lbs': 4,
-      '110 lbs': 4,
-      '145 lbs': 5,
-      '150 lbs': 5,
-      '175 lbs': 5
+    size: {
+      Small: 1,
+      Medium: 2,
+      Large: 3,
+      Giant: 4,
+    }, // q2
+    weight: {
+      "5 lbs": 1,
+      "13 lbs": 1,
+      "15 lbs": 1,
+      "16 lbs": 1,
+      "20 lbs": 1,
+      "24 lbs": 2,
+      "25 lbs": 2,
+      "30 lbs": 2,
+      "35 lbs": 2,
+      "45 lbs": 2,
+      "50 lbs": 3,
+      "55 lbs": 3,
+      "60 lbs": 3,
+      "65 lbs": 3,
+      "70 lbs": 4,
+      "80 lbs": 4,
+      "100 lbs": 4,
+      "110 lbs": 4,
+      "145 lbs": 4,
+      "150 lbs": 4,
+      "175 lbs": 4,
     }, // q3
-    'shedding': {
-      'Low': 1,
-      'Moderate': 2,
-      'Medium': 3,
-      'High': 5
-    },  // q4
-    'life_expectancy': {
-      '6': 1,
-      '7': 1,
-      '8': 2,
-      '9': 2,
-      '10': 3,
-      '11': 3,
-      '12': 4,
-      '13': 4,
-      '14': 5
+    shedding: {
+      Low: 1,
+      Moderate: 2,
+      Medium: 3,
+      High: 4,
+    }, // q4
+    life_expectancy: {
+      6: 1,
+      7: 1,
+      8: 2,
+      9: 2,
+      10: 3,
+      11: 3,
+      12: 4,
+      13: 4,
+      14: 4,
     }, // q5
-    'barking': {
-      'Low': 1,
-      "Moderate": 2,
-      'Medium': 3,
-      'High': 5
+    barking: {
+      Low: 1,
+      Moderate: 2,
+      Medium: 3,
+      High: 4,
     }, // q6
-    'energy': {
-      'Low': 1,
-      'Moderate': 2,
-      'Medium': 3,
-      'High': 5
+    energy: {
+      Low: 1,
+      Moderate: 2,
+      Medium: 3,
+      High: 4,
     }, //  q7
-    'trainability': {
-      'Low': 1,
-      'Moderate': 2,
-      'Medium': 3,
-      'High': 5
+    trainability: {
+      Low: 1,
+      Moderate: 2,
+      Medium: 3,
+      High: 4,
     }, // q8
-    'protectiveness': {
-      'Low': 1,
-      'Moderate': 2,
-      'Medium': 3,
-      'High': 5
+    protectiveness: {
+      Low: 1,
+      Moderate: 2,
+      Medium: 3,
+      High: 4,
     }, // q9
-    'alargy': {
-      'Low': 1,
-      'Moderate': 2,
-      'Medium': 3,
-      'High': 5
-    } // q1,
-  }
+    alargy: {
+      Low: 1,
+      Moderate: 2,
+      Medium: 3,
+      High: 4,
+    }, // q1,
+  };
 
   // use a for loop to iterate over the dog breeds array to changs the words to numbers
 
-   for (let i = 0; i < dogBreeds.length; i++) {
+  for (let i = 0; i < dogBreeds.length; i++) {
     let breed = dogBreeds[i];
     breed.size = map.size[breed.size];
     breed.weight = map.weight[breed.weight];
@@ -468,16 +464,15 @@ const convertToScore = () => {
     breed.trainability = map.trainability[breed.trainability];
     breed.protectiveness = map.protectiveness[breed.protectiveness];
     // breed.alargy = map.alargy[breed.alargy];
-   }
-}
+  }
+};
 
-
-// array of user answers 
-// const userRes = [
+// array of user answers
+// const answers = [
 //   1, // alargy
 //   3, // size
 //   4, // weight
-//   5, // shedding 
+//   5, // shedding
 //   3, // life expectancy
 //   2, // barking
 //   5, // energy
@@ -486,35 +481,46 @@ const convertToScore = () => {
 
 // ];
 
-// get the user's answers from local storage
-const userRes = JSON.parse(localStorage.getItem("answers"));
-
-
-// total score of user answers is 29
-for (let i = 0; i < userRes.length; i++) {
-  userRes[i] = parseInt(userRes[i])
-}
-const totalScore = userRes.reduce((a, b) => a + b, 0);
-// const totalScore = 33;
-console.log(totalScore)
-convertToScore();
-
-
 // // function to replace the words with numbers
 // console.log( dogBreeds[0])
 // console.log( dogBreeds[1])
 
 // get the total of all the scores for each dog breed
 function getScore(dog) {
-  return dog.size + dog.weight + dog.shedding + dog.life_expectancy + dog.barking + dog.energy + dog.trainability + dog.protectiveness;
+  return (
+    dog.size +
+    dog.weight +
+    dog.shedding +
+    dog.life_expectancy +
+    dog.barking +
+    dog.energy +
+    dog.trainability +
+    dog.protectiveness
+  );
 }
 // function to get the best 3 matches based on the user's answers
 
 const getBestMatches = () => {
+  localStorage.clear("bestMatches");
   let bestMatches = [];
 
+  // get the user's answers from local storage
+  // const userRes = JSON.parse(localStorage.getItem("answers"));
+
+  // total score of user answers is 29
+  for (let i = 0; i < answers.length; i++) {
+    answers[i] = parseInt(answers[i]);
+  }
+
+  let totalScore = answers.reduce((a, b) => a + b, 0);
+  if (totalScore === 0 || totalScore === null || totalScore > 35) {
+    totalScore = 31;
+  }
+  // const totalScore = 31;
+  console.log(totalScore);
+  convertToScore();
+
   for (let i = 0; i < dogBreeds.length; i++) {
-    
     // push the dog breed that's closest to the user's answers
 
     const lowest = totalScore - 6;
@@ -523,56 +529,54 @@ const getBestMatches = () => {
     if (getScore(dogBreeds[i]) >= lowest && getScore(dogBreeds[i]) <= highest) {
       bestMatches.push(dogBreeds[i]);
     }
-    
   }
   // now since the array is smaller, we can still get the best 3 matches or more based on the user's answers
-  let weightMatch  =[]
-  let sheddingMatch = []
-  let barkingMatch = []
-  let lifeExpectancyMatch = []
+  let weightMatch = [];
+  let sheddingMatch = [];
+  let barkingMatch = [];
+  let lifeExpectancyMatch = [];
   for (let i = 0; i < bestMatches.length; i++) {
     // based on weight
-    
-    if(bestMatches[i].weight <= userRes[2]){
-      weightMatch.push(bestMatches[i])
-    }
-    
 
+    if (bestMatches[i].weight <= answers[2]) {
+      weightMatch.push(bestMatches[i]);
+    }
   }
 
   for (let i = 0; i < weightMatch.length; i++) {
     // based on shedding
-    if(weightMatch[i].shedding <= userRes[3]){
-      sheddingMatch.push(weightMatch[i])
+    if (weightMatch[i].shedding <= answers[3]) {
+      sheddingMatch.push(weightMatch[i]);
     }
-
   }
 
   for (let i = 0; i < sheddingMatch.length; i++) {
     // based on barking
-    if(sheddingMatch[i].barking <= userRes[5]){
-      barkingMatch.push(sheddingMatch[i])
+    if (sheddingMatch[i].barking <= answers[5]) {
+      barkingMatch.push(sheddingMatch[i]);
     }
-
   }
 
   for (let i = 0; i < barkingMatch.length; i++) {
     // based on life expectancy
-    if(barkingMatch[i].life_expectancy <= userRes[4]){
-      lifeExpectancyMatch.push(barkingMatch[i])
+    if (barkingMatch[i].life_expectancy <= answers[4]) {
+      lifeExpectancyMatch.push(barkingMatch[i]);
     }
-
-  }
-  if(lifeExpectancyMatch.length === 0){
-    lifeExpectancyMatch = lifeExpectancyMatch.concat(bestMatches)
   }
 
-  console.log("Best matches\n",bestMatches);
-  console.log(weightMatch)
-  console.log(sheddingMatch)
-  console.log(barkingMatch)
-  console.log(lifeExpectancyMatch)
+  console.log("Best matches\n", bestMatches);
+  console.log(weightMatch);
+  console.log(sheddingMatch);
+  console.log(barkingMatch);
+  console.log(lifeExpectancyMatch);
 
-}
+  // get the top 3 matches
 
-getBestMatches();
+  // push the top 3 matches to local storage
+  // localStorage.setItem("bestMatches", JSON.stringify(lifeExpectancyMatch));
+  if(lifeExpectancyMatch.length > 3){
+    lifeExpectancyMatch = lifeExpectancyMatch.slice(0,3)
+  }
+  return lifeExpectancyMatch;
+};
+

@@ -15,16 +15,16 @@
 // getFromLocalStorage()
 
 function stars (rating) {
-    if (rating === 1 ) {
+    if (rating === "Low" || rating === 1 ) {
         return `
         <i id="icon" class="fa-solid fa-star"></i>
-        <i id="icon" class="fa-solid fa-star"></i>
+        <i id="icon" class="fa-regular fa-star"></i>
         <i id="icon" class="fa-regular fa-star"></i>
         <i id="icon" class="fa-regular fa-star"></i>
         <i id="icon" class="fa-regular fa-star"></i>
         `
     }
-    else if ( rating === 2) {
+    else if ( rating === "Moderate" || rating === 2) {
         return `
         <i id="icon" class="fa-solid fa-star"></i>
         <i id="icon" class="fa-solid fa-star"></i>
@@ -34,7 +34,7 @@ function stars (rating) {
         `
 
     }
-    else if (rating === 3) {
+    else if (rating === "Medium" || rating === 3) {
         return `
         <i id="icon" class="fa-solid fa-star"></i>
         <i id="icon" class="fa-solid fa-star"></i>
@@ -43,7 +43,7 @@ function stars (rating) {
         <i id="icon" class="fa-regular fa-star"></i>
         `
     }
-    else if (rating === 5) {
+    else if (rating === "High" || rating === 4) {
         return `
         <i id="icon" class="fa-solid fa-star"></i>
         <i id="icon" class="fa-solid fa-star"></i>
@@ -69,7 +69,7 @@ function convertSize(rating){
     else if (rating === 3) {
         return "Large"
     }
-    else if (rating === 5) {
+    else if (rating === 4) {
         return "Giant"
     }
     else {
@@ -90,9 +90,7 @@ function convertWeight(rating){
     else if (rating === 4) {
         return "71-110 lbs"
     }
-    else if (rating === 5) {
-        return "110+ lbs"
-    }
+    
     else {
         return rating;
     }
@@ -103,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     var pageSize = 3;
     var currentPage = 1;
-
+    console.log(dogBreeds)
     function showPage(page) {
         var dogBreedList = document.getElementById("dogBreedList");
         dogBreedList.innerHTML = '';

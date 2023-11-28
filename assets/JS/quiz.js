@@ -12,11 +12,17 @@ var questionText = document.querySelector(".questionText");
 
 var submitBtn = document.querySelector(".submitButton");
 
+var resultBox = document.querySelector(".resultsContainer");
+
+var resultsContainer = document.querySelector(".resultsbox");
+
 var globalIndex = 0;
 
 questionBox.style.display = "none";
 
 finishedQuiz.style.display = "none";
+
+resultBox.style.display = "none";
 
 var questions = [
   {
@@ -79,6 +85,7 @@ function displayQuestion(i) {
   });
 }
 const answers = [];
+let bestMatches = [];
 function verifyAnswer(answer) {
   answers.push(answer);
   globalIndex++;
@@ -91,6 +98,7 @@ function verifyAnswer(answer) {
     localStorage.setItem("answers", JSON.stringify(answers));
     questionBox.style.display = "none";
     finishedQuiz.style.display = "flex";
+    bestMatches = getBestMatches();
   }
 }
 
@@ -99,3 +107,42 @@ startBtn.addEventListener("click", function () {
   questionBox.style.display = "block";
   displayQuestion(globalIndex);
 });
+
+submitBtn.addEventListener("click", function (e) {
+  // window.location.href = "results.html";
+  e.preventDefault();
+  finishedQuiz.style.display = "none";
+
+  resultBox.style.display = "flex";
+  if (bestMatches.length === 0) {
+    var h1 = document.createElement("h1");
+    h1.textContent = "No matches found!";
+    resultBox.appendChild(h1);
+  } else {
+    for (var i = 0; i < bestMatches.length; i++) {
+      const card = `
+      <div class="card col-xxl-3 col-xl-4 col-lg-3 col-md-5 col-sm-8 p-4 card_div card_bg m-1" style="">
+        <h4 class="card-title text-center primary_font mt-2">${bestMatches[i].breed}</h1>
+        <div class="card_img">
+            <img src="./assets/imgs/doggo.jpg" class="card-img-top img_class" alt="...">
+        </div>
+        <div class="card-body secondary_font fw-semibold gap-2">
+            <p class="card-text">Size: ${convertSize(bestMatches[i].size)}</p>
+            <p class="card-text">Weight: ${convertWeight(bestMatches[i].weight)}</p>
+            <p class="card-text ">Shedding: ${stars(bestMatches[i].shedding)}</p>
+            <p class="card-text">Life Expectancy: ${bestMatches[i].life_expectancy}</p>
+            <p class="card-text">Barking: ${stars(bestMatches[i].barking)}</p>
+            <p class="card-text">Energy: ${stars(bestMatches[i].energy)}</p>
+            <p class="card-text">Trainability: ${stars(bestMatches[i].trainability)}</p>
+            <p class="card-text">Protectiveness: ${stars(bestMatches[i].protectiveness)}</p>
+            </div>
+    </div>
+
+      `;
+
+      resultsContainer.innerHTML += card;
+      }
+
+
+  }
+})
