@@ -2,7 +2,7 @@
    include('config.php');
    session_start();
 
-
+   // Checks if the user is logged in
    if(isset($_SESSION['login_user'])) {
     $email_check = $_SESSION['login_user'];
 

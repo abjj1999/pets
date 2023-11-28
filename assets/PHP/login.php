@@ -26,6 +26,9 @@
             //header("Location: http://localhost/pets/assets/PHP/index.php", true, 303);
             //die();
         }
+        else {
+            echo "Password is invalid.";
+        }
     } else {
         echo "Your Email or Password is invalid";
     }
