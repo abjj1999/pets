@@ -473,22 +473,29 @@ const convertToScore = () => {
 
 
 // array of user answers 
-const userRes = [
-  1, // alargy
-  3, // size
-  4, // weight
-  5, // shedding 
-  3, // life expectancy
-  2, // barking
-  5, // energy
-  5, // trainability
-  1, // protectiveness
+// const userRes = [
+//   1, // alargy
+//   3, // size
+//   4, // weight
+//   5, // shedding 
+//   3, // life expectancy
+//   2, // barking
+//   5, // energy
+//   5, // trainability
+//   1, // protectiveness
 
-];
+// ];
+
+// get the user's answers from local storage
+const userRes = JSON.parse(localStorage.getItem("answers"));
 
 
 // total score of user answers is 29
+for (let i = 0; i < userRes.length; i++) {
+  userRes[i] = parseInt(userRes[i])
+}
 const totalScore = userRes.reduce((a, b) => a + b, 0);
+// const totalScore = 33;
 console.log(totalScore)
 convertToScore();
 
@@ -510,8 +517,8 @@ const getBestMatches = () => {
     
     // push the dog breed that's closest to the user's answers
 
-    const lowest = totalScore - 5;
-    const highest = totalScore + 6;
+    const lowest = totalScore - 6;
+    const highest = totalScore + 8;
 
     if (getScore(dogBreeds[i]) >= lowest && getScore(dogBreeds[i]) <= highest) {
       bestMatches.push(dogBreeds[i]);
@@ -519,21 +526,16 @@ const getBestMatches = () => {
     
   }
   // now since the array is smaller, we can still get the best 3 matches or more based on the user's answers
-  const weightMatch  =[]
-  const sheddingMatch = []
-  const barkingMatch = []
-  const lifeExpectancyMatch = []
+  let weightMatch  =[]
+  let sheddingMatch = []
+  let barkingMatch = []
+  let lifeExpectancyMatch = []
   for (let i = 0; i < bestMatches.length; i++) {
     // based on weight
     
     if(bestMatches[i].weight <= userRes[2]){
       weightMatch.push(bestMatches[i])
     }
-
-    
-
-
-
     
 
   }
@@ -560,6 +562,9 @@ const getBestMatches = () => {
       lifeExpectancyMatch.push(barkingMatch[i])
     }
 
+  }
+  if(lifeExpectancyMatch.length === 0){
+    lifeExpectancyMatch = lifeExpectancyMatch.concat(bestMatches)
   }
 
   console.log("Best matches\n",bestMatches);
