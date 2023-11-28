@@ -74,11 +74,9 @@
     padding: 20px;
     display: flex;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   
   .endHeader {
@@ -95,4 +93,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  
+  .submitButton{
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }

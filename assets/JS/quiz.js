@@ -10,6 +10,8 @@ var finishedQuiz = document.querySelector(".endContainer");
 
 var questionText = document.querySelector(".questionText");
 
+var submitBtn = document.querySelector(".submitButton");
+
 var globalIndex = 0;
 
 questionBox.style.display = "none";
@@ -76,15 +78,19 @@ function displayQuestion(i) {
     });
   });
 }
+const answers = [];
 function verifyAnswer(answer) {
+  answers.push(answer);
   globalIndex++;
   if (globalIndex < questions.length) {
     displayQuestion(globalIndex);
   } else {
     console.log(globalIndex);
     console.log("quiz finished");
+    console.log(answers);
+    localStorage.setItem("answers", JSON.stringify(answers));
     questionBox.style.display = "none";
-    finishedQuiz.style.display = "block";
+    finishedQuiz.style.display = "flex";
   }
 }
 
