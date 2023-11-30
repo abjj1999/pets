@@ -18,6 +18,7 @@
     <script src="https://kit.fontawesome.com/81f4fdfae6.js" crossorigin="anonymous"></script>
     <script src="./assets/JS/index.js"></script>
     <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/login-register.css" />
     <title>Pet</title>
     
 </head>
@@ -58,5 +59,16 @@
               </div>
           </div>
       </nav>
+      <div class="container ">
+        <!-- Will be on the left side -->
+        <p class="primary_font_login">Greetings and welcome to Pet Finder, where we engage in a comprehensive questionnaire 
+            to assist you in identifying the canine companion that aligns perfectly with your unique requirements.</p>
+        <div class="left-column">
+        </div>
+        <div class="right-column">
+            <img src="assets\imgs\dogs_login_page.png" alt="Picture of Dogs">
+            <img src="assets\imgs\frisbee_dog.png" alt="Dog holding frisbee">
+        </div>
+    </div>
   </body>
 </html>
