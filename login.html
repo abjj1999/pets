@@ -1,0 +1,27 @@
+<!-- login page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+	<!--1-2 paragraphs? (mid-left)
+	2 text fields (mid left)
+	1 button (mid left)
+	image (mid-right)-->
+	<div> <!-- Will be on the left side -->
+		<p>Welcome back!</p>
+		<p>Login to view your recommendations.</p>
+		<form action="login.php" method="post">
+			<input type="email" id="email" name="email" placeholder="Email" required><br>
+			<input type="password" id="password" name="password" placeholder="Password" required><br>
+			<button type="submit">Login</button>
+		</form><br>
+	</div>
+	<div> <!-- Will be on the right side -->
+		<img src="assets\imgs\dogs_login_page.png" alt="Picture of Dogs" width="500" height="400">
+	</div>
+</body>
+</html>
