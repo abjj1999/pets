@@ -1,5 +1,6 @@
-<!--About us page-->
-<!DOCTYPE html>
+<?php
+    include('./assets/PHP/session.php');
+?>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -38,28 +39,27 @@
           </h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav list_styling me-auto">
-            <li class="nav-item">
-              <a class="nav-link " href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link "   href="./breeds.html">Breeds</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link "  href="./quiz.html">Quiz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./aboutus.html">About Us</a>
-            </li>
-          </ul>
+        <ul class="navbar-nav list_styling me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./breeds.php">Breeds</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./quiz.php">Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./aboutus.php">About Us</a>
+                </li>
+            </ul>
 
-          <div class="buttons_container">
-            <button class="btn" id="loginBtn">Login</button>
-            <button class="btn" id="signupBtn">Sign Up</button>
-          </div>
+            <div class="buttons_container">
+                <button class="btn" id="loginBtn"><a class="nav-link" onclick="logoutRedirect()">Logout</a></button>
+            </div>
         </div>
       </div>
     </nav>

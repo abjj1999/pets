@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+    include('./assets/PHP/session.php');
+?>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -20,6 +22,7 @@
         <script src="https://kit.fontawesome.com/81f4fdfae6.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./assets/css/global.css" />
         <link rel="stylesheet" href="./assets/css/breeds.css" />
+        <script src="./assets/JS/index.js"></script>
         <title>Pet</title>
       </head>
 <body>
@@ -37,24 +40,23 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav list_styling me-auto">
+        <ul class="navbar-nav list_styling me-auto">
                 <li class="nav-item">
-                    <a class="nav-link"  href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  active" aria-current="page" href="./breeds.html">Breeds</a>
+                    <a class="nav-link" href="./breeds.php">Breeds</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./quiz.html">Quiz</a>
+                    <a class="nav-link" href="./quiz.php">Quiz</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./aboutus.html">About Us</a>
+                    <a class="nav-link" href="./aboutus.php">About Us</a>
                 </li>
             </ul>
 
             <div class="buttons_container">
-                <button class="btn" id="loginBtn"><a class="nav-link" onclick="loginRedirect()">Login</a></button>
-                <button class="btn" id="signupBtn"><a class="nav-link" onclick="signUpRedirect()">Sign Up</a></button>
+                <button class="btn" id="loginBtn"><a class="nav-link" onclick="logoutRedirect()">Logout</a></button>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
-<!-- home page -->
-<!DOCTYPE html>
+<?php
+    include('./assets/PHP/session.php');
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -37,25 +38,24 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse " id="navbarNav">
-				<ul class="navbar-nav list_styling me-auto">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./breeds.html">Breeds</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./quiz.html">Quiz</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./aboutus.html">About Us</a>
-					</li>
-				</ul>
+            <ul class="navbar-nav list_styling me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./breeds.php">Breeds</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./quiz.php">Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./aboutus.php">About Us</a>
+                </li>
+            </ul>
 
-				<div class="buttons_container">
-					<button class="btn" id="loginBtn"><a class="nav-link" onclick="loginRedirect()">Login</a></button>
-					<button class="btn" id="signupBtn"><a class="nav-link" onclick="signUpRedirect()">Sign Up</a></button>
-				</div>
+            <div class="buttons_container">
+                <button class="btn" id="loginBtn"><a class="nav-link" onclick="logoutRedirect()">Logout</a></button>
+            </div>
               </div>
           </div>
       </nav>
