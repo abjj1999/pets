@@ -145,4 +145,8 @@ submitBtn.addEventListener("click", function (e) {
 
 
   }
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> Login-Signup

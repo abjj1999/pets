@@ -5,6 +5,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 # font awesome links
+<<<<<<< HEAD
 <script src="https://kit.fontawesome.com/350e2576bf.js" crossorigin="anonymous"></script>
 
 # quiz questions
@@ -18,3 +19,6 @@ How well does the energy level of this breed match your own lifestyle and activi
 How willing are you to devote the necessary time and resources to train this breed effectively?
 How suitable is the breed's natural level of protectiveness for your lifestyle and household?
 How well do this breed's specific characteristics (like trainability) meet your requirements?
+=======
+<script src="https://kit.fontawesome.com/350e2576bf.js" crossorigin="anonymous"></script>
+>>>>>>> Login-Signup

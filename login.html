@@ -2,26 +2,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+		  rel="stylesheet"
+		  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+		  crossorigin="anonymous" />
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Roboto+Mono:wght@300&display=swap');
+	</style>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/81f4fdfae6.js" crossorigin="anonymous"></script>
+	<script src="./assets/JS/index.js"></script>
+	<link rel="stylesheet" href="./assets/css/global.css" />
+	<link rel="stylesheet" href="./assets/css/login-register.css" />
+	<title>Login</title>
+	
 </head>
 <body>
-	<!--1-2 paragraphs? (mid-left)
+	
+	<!-- NavBar -->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary background_color">
+		<div class="container-fluid">
+			<a class="navbar-brand " href="#">
+				<!-- <img src="./assets/imgs/logo.png" alt="" class="img-fluid" width="100px" height="0px"> -->
+				<h1 class="primary_font">
+					Pet Finder
+					<i class="fa-solid fa-paw"></i>
+				</h1>
+
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse " id="navbarNav">
+				<ul class="navbar-nav list_styling me-auto">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./breeds.html">Breeds</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./quiz.html">Quiz</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./aboutus.html">About Us</a>
+					</li>
+				</ul>
+
+				<div class="buttons_container">
+					<button class="btn" id="loginBtn"><a class="nav-link" onclick="loginRedirect()">Login</a></button>
+					<button class="btn" id="signupBtn"><a class="nav-link" onclick="signUpRedirect()">Sign Up</a></button>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+	<!--1-2 paragraphs (mid-left)
 	2 text fields (mid left)
 	1 button (mid left)
 	image (mid-right)-->
-	<div> <!-- Will be on the left side -->
-		<p>Welcome back!</p>
-		<p>Login to view your recommendations.</p>
-		<form action="login.php" method="post">
-			<input type="email" id="email" name="email" placeholder="Email" required><br>
-			<input type="password" id="password" name="password" placeholder="Password" required><br>
-			<button type="submit">Login</button>
-		</form><br>
+	<div class="container">
+		<!-- Will be on the left side -->
+		<div class="left-column buttons_container_login">
+			<p class="primary_font_login">Welcome back!</p>
+			<p class="primary_font_login">Login to view your recommendations.</p>
+			<form id="loginForm" method="POST">
+				<input type="email" id="email" name="email" placeholder="Email" required><br>
+				<input type="password" id="password" name="password" placeholder="Password" required><br>
+				<button class="btn"  type="submit">Login</button>
+			</form>
+			<!-- <div id="response"></div> -->
+			<div id="response"></div>
+			<script src="\pets\assets\JS\login.js"></script>
+		</div>
+		<div class="right-column">
+			<img src="assets\imgs\dogs_login_page.png" alt="Picture of Dogs">
+		</div>
 	</div>
-	<div> <!-- Will be on the right side -->
-		<img src="assets\imgs\dogs_login_page.png" alt="Picture of Dogs" width="500" height="400">
-	</div>
+
 </body>
 </html>

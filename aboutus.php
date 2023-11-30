@@ -1,5 +1,6 @@
-<!--About us page-->
-<!DOCTYPE html>
+<?php
+    include('./assets/PHP/session.php');
+?>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,6 +23,7 @@
     <script src="https://kit.fontawesome.com/81f4fdfae6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/CSS/aboutus.css"/>
     <link rel="stylesheet" href="./assets/CSS/global.css"/>
+    <script src="./assets/JS/index.js"></script>
     <title>Pet</title>
   </head>
   <body>
@@ -37,53 +39,27 @@
           </h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-<<<<<<< HEAD
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav list_styling me-auto">
-            <li class="nav-item">
-              <a class="nav-link "  href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link "  href="./breeds.html">Breeds</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./quiz.html">Quiz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./aboutus.html">About Us</a>
-            </li>
-          </ul>
-
-          <div class="buttons_container">
-            <button class="btn" id="loginBtn">Login</button>
-            <button class="btn" id="signupBtn">Sign Up</button>
-          </div>
-=======
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav list_styling me-auto">
+        <ul class="navbar-nav list_styling me-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./breeds.html">Breeds</a>
+                    <a class="nav-link" href="./breeds.php">Breeds</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./quiz.html">Quiz</a>
+                    <a class="nav-link" href="./quiz.php">Quiz</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./aboutus.html">About Us</a>
+                    <a class="nav-link" href="./aboutus.php">About Us</a>
                 </li>
             </ul>
 
             <div class="buttons_container">
-                <button class="btn" id="loginBtn"><a class="nav-link" onclick="loginRedirect()">Login</a></button>
-                <button class="btn" id="signupBtn"><a class="nav-link" onclick="signUpRedirect()">Sign Up</a></button>
+                <button class="btn" id="loginBtn"><a class="nav-link" onclick="logoutRedirect()">Logout</a></button>
             </div>
->>>>>>> Login-Signup
         </div>
       </div>
     </nav>
