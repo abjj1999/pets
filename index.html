@@ -17,6 +17,7 @@
     <script src="https://kit.fontawesome.com/81f4fdfae6.js" crossorigin="anonymous"></script>
     <script src="./assets/JS/index.js"></script>
     <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/login-register.css" />
     <title>Pet</title>
     
 </head>
@@ -33,30 +34,41 @@
 
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse " id="navbarNav">
-                  <ul class="navbar-nav list_styling me-auto">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="login">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Breeds</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Quiz</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">About Us</a>
-                      </li>
-                  </ul>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse " id="navbarNav">
+				<ul class="navbar-nav list_styling me-auto">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./breeds.html">Breeds</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./quiz.html">Quiz</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./aboutus.html">About Us</a>
+					</li>
+				</ul>
 
-                  <div class="buttons_container">
-                      <button class="btn" id="loginBtn"><a class="nav-link" onclick="loginRedirect()">Login</a></button>
-                      <button class="btn" id="signupBtn"><a class="nav-link" onclick="signUpRedirect()">Sign Up</a></button>
-                  </div>
+				<div class="buttons_container">
+					<button class="btn" id="loginBtn"><a class="nav-link" onclick="loginRedirect()">Login</a></button>
+					<button class="btn" id="signupBtn"><a class="nav-link" onclick="signUpRedirect()">Sign Up</a></button>
+				</div>
               </div>
           </div>
       </nav>
+      <div class="container ">
+        <!-- Will be on the left side -->
+        <p class="primary_font_login">Greetings and welcome to Pet Finder, where we engage in a comprehensive questionnaire 
+            to assist you in identifying the canine companion that aligns perfectly with your unique requirements.</p>
+        <div class="left-column">
+        </div>
+        <div class="right-column">
+            <img src="assets\imgs\dogs_login_page.png" alt="Picture of Dogs">
+            <img src="assets\imgs\frisbee_dog.png" alt="Dog holding frisbee">
+        </div>
+    </div>
   </body>
 </html>

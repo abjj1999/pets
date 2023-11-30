@@ -25,11 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 // If the request is complete and successful (status 200), update the content of the responseDiv.
                 responseDiv.innerHTML = xhr.responseText; // Display the response from the server.
                 if (responseDiv.innerHTML.includes("Login success.") && responseDiv.innerHTML != null) {
-                    window.location.replace("http://localhost/pets/assets/PHP/index.php");
+                    window.location.replace("http://localhost/pets/quiz.php");
                 }
             }
         };
-
         // Log messages to the browser's console for debugging purposes.
         //console.log("Sending form data."); // Log a message indicating that form data is being sent.
         //console.log(formData); // Log the FormData object to see its contents.
